@@ -4,15 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TP1G6</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        header{
+            background: #165066;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .header1 img{
+            height: 90px;
+        }
+        ul{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 450px;
+            height: 45px;
+            list-style: none;
+            margin: 5px;
+        }
+        li{
+        display: flex;
+        }
+        .link{
+            text-decoration: none;
+            color: white;
+            font-weight: 700;
+            padding: 5px;
+        }
+
+        .link:hover{
+            transform: translateY(10px);
+            transition: 0.5s;
+            border-bottom: solid 1px #25b7f1;
+        }
+    </style>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Museos</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-    </nav>
+    <header>
+        <div class="header1">
+            <img src="assets/unjuvirtual.png" alt="logo-unju">
+        </div>
+
+        <nav>
+            <ul>
+                <li><a class="link" href="index.html">INICIO</a></li>
+                <li><a class="link" href="">MUSEO</a></li>
+                <li><a class="link" href="contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
     <img src="./assets/img1.jpg" alt="foto de los cerros de jujuy">
     <section>
         <h1>Descubre la Cultura de Jujuy</h1>
