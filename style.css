@@ -35,8 +35,8 @@ body {
   }
   
   textarea {
-    resize: none; /* Evita que se pueda agrandar */
-    height: 100px; /* Tamaño fijo opcional */
+    resize: none; 
+    height: 100px; 
   }
   
   button {
