@@ -50,5 +50,11 @@ body {
   
   button:hover {
     background: #279e92;
-  }
+  } 
+input:focus,
+ textarea:focus {
+  outline: none;
+  border-color: #c4772e;
+  box-shadow: 0 0 5px rgba(46, 196, 182, 0.5);
+}
   
