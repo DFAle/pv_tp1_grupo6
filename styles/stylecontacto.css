@@ -1,60 +1,192 @@
-body {
-    font-family: sans-serif;
-    background: #f9f9f9;
-    color: #333;
-    display: flex;
-    justify-content: center;
-    padding: 2rem;
-  }
-  
-  form {
-    background: white;
-    padding: 1.5rem;
-    border-radius: 8px;
-    max-width: 400px;
-    width: 100%;
-  }
-  
-  div {
-    margin-bottom: 1rem;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 0.3rem;
-    font-weight: bold;
-  }
-  
-  input,
-  textarea {
-    width: 100%;
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 1rem;
-  }
-  
-  textarea {
-    resize: none; 
-    height: 100px; 
-  }
-  
-  button {
-    padding: 0.5rem 1rem;
-    background: #2ec4b6;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background: #279e92;
-  } 
-input:focus,
- textarea:focus {
-  outline: none;
-  border-color: #c4772e;
-  box-shadow: 0 0 5px rgba(46, 196, 182, 0.5);
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
 }
-  
+
+/* Header */
+header {
+  background: #165066;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header1 img {
+  height: 90px;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 450px;
+  height: 45px;
+  list-style: none;
+  margin: 5px;
+}
+
+li {
+  display: flex;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  padding: 5px;
+}
+
+.link:hover {
+  transform: translateY(10px);
+  transition: 0.5s;
+  border-bottom: solid 1px #25b7f1;
+}
+/* Contenedor principal del formulario */
+main {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Estilo general del título */
+main h1 {
+  text-align: center;
+  color: #165066;
+  margin-bottom: 30px;
+}
+
+/* Formulario */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* Etiquetas */
+label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #165066;
+}
+
+/* Inputs y Textarea */
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  width: 100%;
+  transition: border 0.3s;
+}
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  width: 100%;
+  transition: border 0.3s;
+  height: 120px; /* <-- NUEVO: altura fija */
+  resize: none;  /* <-- NUEVO: no se puede redimensionar */
+}
+
+input:focus,
+textarea:focus {
+  border: 1px solid #25b7f1;
+  outline: none;
+}
+
+/* Botón */
+button[type="submit"] {
+  background-color: #165066;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+  width: fit-content;
+  align-self: center;
+}
+
+button[type="submit"]:hover {
+  background-color: #25b7f1;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  main {
+      padding: 10px;
+  }
+
+  header {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  header nav ul {
+      width: 100%;
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  footer nav ul {
+      flex-direction: column;
+      gap: 10px;
+  }
+}
+
+/* Footer */
+footer {
+  background-color: #165066;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+footer div {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+footer p {
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+footer nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+footer nav ul li {
+  display: flex;
+}
+
+footer nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  padding: 5px;
+  transition: 0.3s;
+}
+
+footer nav ul li a:hover {
+  transform: translateY(5px);
+  border-bottom: solid 1px #25b7f1;
+  color: #25b7f1;
+}
