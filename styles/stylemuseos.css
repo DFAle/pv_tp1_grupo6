@@ -146,3 +146,10 @@
     color: #25b7f1;
   }
   
+.link:hover,
+.link-museos:hover {
+    color: #4983c2; 
+    text-decoration: underline;
+}
+
+  
